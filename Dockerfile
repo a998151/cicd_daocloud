@@ -1,5 +1,5 @@
 FROM maven:3 AS bd
-WORKIR /code
+WORKDIR /code
 COPY ./ /code
 RUN mvn package -Dmaven.test.skip=true
 
