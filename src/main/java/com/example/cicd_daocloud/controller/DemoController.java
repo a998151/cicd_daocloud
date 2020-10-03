@@ -18,4 +18,9 @@ public class DemoController {
     public String sayHello(HttpServletRequest request){
         return "Hello World!";
     }
+
+    @GetMapping("/")
+    public String index(){
+        return "I am index...";
+    }
 }
